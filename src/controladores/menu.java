@@ -19,7 +19,7 @@ public class menu {
 	public static void main(String[] args) {
 		
 		intMenu menu=new implMenu();
-		intPaciente pacien=new implPaciente();
+		intPaciente paciente=new implPaciente();
 		intFichero fichero=new implFichero();
 		
 		//Creamos la lista donde guardaremos nuestros datos:
@@ -55,13 +55,13 @@ public class menu {
 								break;
 							
 							case 2:
-								pacien.InsertarPaceinte(bd,archivo);
+								paciente.InsertarPaceinte(bd,archivo);
 								fichero.AbrirFicheroEscritura(archivo,bd);
 								
 								break;
 								
 							case 3:
-								pacien.ModificarPaciente(archivo, bd);
+								paciente.ModificarPaciente(archivo, bd);
 								
 								break;
 						}

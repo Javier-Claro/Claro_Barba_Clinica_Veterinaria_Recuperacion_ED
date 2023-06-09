@@ -42,10 +42,10 @@ public class implFichero implements intFichero {
 	        	
 	        	EscribirEncabezado(archivo);
 	        	
-	        	for(paciente paci : bd)
+	        	for(paciente paciente : bd)
 	        	{
 	        		//Se escriben los datos en el fichero:
-	        		pw.println(paci.getNombrePaciente()+";"+paci.getNumeroTelefono()+";"+paci.getFechaIngreso()+";"+paci.getFechaAlta()+";");
+	        		pw.println(paciente.getNombrePaciente()+";"+paciente.getNumeroTelefono()+";"+paciente.getFechaIngreso()+";"+paciente.getFechaAlta()+";");
 	        	}
 	        		               	        	
 	        } catch (Exception e) {
